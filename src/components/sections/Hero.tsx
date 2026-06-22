@@ -293,7 +293,7 @@ export default function Hero({ onScrollToWork }: Props) {
                   href="/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-2 text-[12px] font-semibold tracking-[0.15em] uppercase text-ink/55 border border-ink/20 px-7 py-4 rounded-full hover:text-ink hover:border-ink/50 transition-all duration-300"
+                  className="group flex items-center gap-2 text-[12px] font-semibold tracking-[0.15em] uppercase text-ink border border-ink/40 px-7 py-4 rounded-full hover:bg-ink hover:text-page hover:border-ink transition-all duration-300"
                 >
                   View Resume
                   <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300">↗</span>

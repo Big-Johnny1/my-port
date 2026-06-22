@@ -114,7 +114,7 @@ export default function Contact() {
                 href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2 text-[12px] font-bold tracking-[0.15em] uppercase text-white/60 border border-white/20 px-8 py-4 rounded-full hover:text-white hover:border-white/60 transition-all duration-300"
+                className="group inline-flex items-center gap-2 text-[12px] font-bold tracking-[0.15em] uppercase text-white border border-white/50 px-8 py-4 rounded-full hover:bg-white hover:text-[#0d0d0d] transition-all duration-300"
               >
                 View Resume
                 <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300">↗</span>
