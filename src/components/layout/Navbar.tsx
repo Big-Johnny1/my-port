@@ -145,15 +145,18 @@ export default function Navbar({
           {/* Logo */}
           <button
             onClick={() => onNavClick('hero')}
-            className="flex items-center shrink-0"
-            aria-label="John Kalu — home"
+            className="flex items-center gap-2 shrink-0"
           >
-            <img
-              src="/logo.png"
-              alt="John Kalu"
-              className="h-8 w-auto"
-              style={{ filter: textDim ? 'invert(1) brightness(0)' : 'none' }}
+            <span
+              className="w-2 h-2 rounded-sm"
+              style={{ background: textDim ? 'var(--color-ink)' : '#ffffff' }}
             />
+            <span
+              className="text-xs font-semibold tracking-[0.15em] uppercase"
+              style={{ color: textDim ? 'var(--color-ink)' : '#ffffff' }}
+            >
+              John Kalu
+            </span>
           </button>
 
           {isProjectView ? (
@@ -220,7 +223,9 @@ export default function Navbar({
           >
             {/* Mobile header */}
             <div className="flex items-center justify-between px-6 h-14">
-              <img src="/logo.png" alt="John Kalu" className="h-8 w-auto" />
+              <span className="text-xs font-semibold tracking-[0.15em] uppercase text-white">
+                John Kalu
+              </span>
               <button
                 onClick={() => setMobileOpen(false)}
                 className="text-white"

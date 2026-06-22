@@ -100,14 +100,27 @@ export default function Contact() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="mt-16"
         >
-          <MagneticButton>
-            <a
-              href="mailto:mrkalujohn@gmail.com"
-              className="inline-flex items-center gap-3 bg-white text-[#0d0d0d] text-[12px] font-bold tracking-[0.15em] uppercase px-8 py-4 rounded-full hover:bg-white/90 transition-colors"
-            >
-              Send Message →
-            </a>
-          </MagneticButton>
+          <div className="flex flex-wrap items-center gap-4">
+            <MagneticButton>
+              <a
+                href="mailto:mrkalujohn@gmail.com"
+                className="inline-flex items-center gap-3 bg-white text-[#0d0d0d] text-[12px] font-bold tracking-[0.15em] uppercase px-8 py-4 rounded-full hover:bg-white/90 transition-colors"
+              >
+                Send Message →
+              </a>
+            </MagneticButton>
+            <MagneticButton>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 text-[12px] font-bold tracking-[0.15em] uppercase text-white/60 border border-white/20 px-8 py-4 rounded-full hover:text-white hover:border-white/60 transition-all duration-300"
+              >
+                View Resume
+                <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300">↗</span>
+              </a>
+            </MagneticButton>
+          </div>
         </motion.div>
 
         <div className="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">

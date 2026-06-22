@@ -272,7 +272,7 @@ export default function Hero({ onScrollToWork }: Props) {
                 Consistent decisions. Reusable patterns. Reduce decision fatigue and respect engineering.
               </p>
             </div>
-            <div className="flex md:items-end md:justify-end">
+            <div className="flex flex-col md:items-end md:justify-end gap-3">
               <MagneticButton>
                 <button
                   onClick={onScrollToWork}
@@ -287,6 +287,17 @@ export default function Hero({ onScrollToWork }: Props) {
                     →
                   </motion.span>
                 </button>
+              </MagneticButton>
+              <MagneticButton>
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-2 text-[12px] font-semibold tracking-[0.15em] uppercase text-ink/55 border border-ink/20 px-7 py-4 rounded-full hover:text-ink hover:border-ink/50 transition-all duration-300"
+                >
+                  View Resume
+                  <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300">↗</span>
+                </a>
               </MagneticButton>
             </div>
           </motion.div>
