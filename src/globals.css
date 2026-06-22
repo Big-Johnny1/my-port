@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+/* Class-based dark mode — `.dark` on <html> activates dark: variants */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  @theme (without inline) emits CSS custom properties at :root so they can
+  be overridden at runtime by the .dark block below.
+*/
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  /* Surface / background scale */
+  --color-page:      #ffffff;   /* main page bg */
+  --color-off-white: #fafaf8;   /* alt section bg */
+  --color-cream:     #e8e3d8;
+  --color-sand:      #f5f1eb;
+  --color-stone:     #f0ede6;
+
+  /* Text */
+  --color-ink:   #0d0d0d;
+  --color-muted: #6b6b6b;
+
+  /* Misc */
+  --color-border: rgba(13, 13, 13, 0.08);
+}
+
+/* ── Dark mode overrides ──────────────────────────────────────────────── */
+.dark {
+  --color-page:      #0c0b09;
+  --color-off-white: #100f0d;
+  --color-cream:     #1a1714;
+  --color-sand:      #1e1c18;
+  --color-stone:     #252220;
+  --color-ink:       #e8e3d8;
+  --color-muted:     #d9d9d9;
+  --color-border:    rgba(232, 227, 216, 0.08);
+}
+
+/* ── Base ─────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-page);
+  color: var(--color-ink);
+  overflow-x: hidden;
+  transition: background-color 0.22s ease, color 0.22s ease;
+}
+
+/* Smooth section bg transitions */
+section, header, nav, div {
+  transition-property: background-color, border-color;
+  transition-duration: 0.22s;
+  transition-timing-function: ease;
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-page);
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Custom cursor — hide default on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  *, *::before, *::after { cursor: none !important; }
+}
+
+/* Reduced-motion: strip decorative transitions */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Scroll-triggered reveal utility */
+.gsap-hidden {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+/* Hover image zoom */
+.img-zoom {
+  overflow: hidden;
+}
+.img-zoom img {
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+.img-zoom:hover img {
+  transform: scale(1.04);
+}
+
+/* "growth." gradient — adapts to light and dark via CSS vars */
+.growth-word {
+  background: linear-gradient(
+    118deg,
+    var(--color-ink) 0%,
+    color-mix(in srgb, var(--color-ink) 50%, var(--color-muted)) 50%,
+    var(--color-ink) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
