@@ -65,7 +65,7 @@ export default function Contact() {
             <span className="block overflow-hidden"><span data-line className="block">that ships.</span></span>
           </h2>
           <p className="mt-8 text-[16px] text-white/50 max-w-md leading-relaxed">
-            Based in Lagos. Open to global. I usually respond within 24 hours.
+            Based in Lagos. Open to remote roles globally. I usually respond within 24 hours.
           </p>
         </motion.div>
 
