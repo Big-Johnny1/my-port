@@ -148,7 +148,7 @@ export default function Navbar({
             className="flex items-center shrink-0"
           >
             <img
-              src="/images/kalu-john-logo.png"
+              src="/images/jj.png"
               alt="Kalu John"
               className="h-10 w-auto"
             />
