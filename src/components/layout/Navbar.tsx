@@ -145,18 +145,13 @@ export default function Navbar({
           {/* Logo */}
           <button
             onClick={() => onNavClick('hero')}
-            className="flex items-center gap-2 shrink-0"
+            className="flex items-center shrink-0"
           >
-            <span
-              className="w-2 h-2 rounded-sm"
-              style={{ background: textDim ? 'var(--color-ink)' : '#ffffff' }}
+            <img
+              src="/images/kalu-john-logo.png"
+              alt="Kalu John"
+              className="h-10 w-auto"
             />
-            <span
-              className="text-xs font-semibold tracking-[0.15em] uppercase"
-              style={{ color: textDim ? 'var(--color-ink)' : '#ffffff' }}
-            >
-              John Kalu
-            </span>
           </button>
 
           {isProjectView ? (
