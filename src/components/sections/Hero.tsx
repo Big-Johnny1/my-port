@@ -290,7 +290,7 @@ export default function Hero({ onScrollToWork }: Props) {
               </MagneticButton>
               <MagneticButton>
                 <a
-                  href="https://drive.google.com/file/d/1rE7jmQGH050_yCq82boCLXyf20FEwD9O/view?usp=sharing"
+                  href="/john-kalu-resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 text-[12px] font-semibold tracking-[0.15em] uppercase text-ink border border-ink/40 px-7 py-4 rounded-full hover:bg-ink hover:text-page hover:border-ink transition-all duration-300"

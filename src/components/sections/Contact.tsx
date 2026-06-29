@@ -111,7 +111,7 @@ export default function Contact() {
             </MagneticButton>
             <MagneticButton>
               <a
-                href="https://drive.google.com/file/d/1rE7jmQGH050_yCq82boCLXyf20FEwD9O/view?usp=sharing"
+                href="/john-kalu-resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 text-[12px] font-bold tracking-[0.15em] uppercase text-white border border-white/50 px-8 py-4 rounded-full hover:bg-white hover:text-[#0d0d0d] transition-all duration-300"
