@@ -120,6 +120,7 @@ export const projects: Project[] = [
 
 export const experience = [
   { period: '2025 — Present', company: 'Datamellon', role: 'UXUI Designer' },
+  { period: 'Jan 2026 — Present', company: 'Ojiffy', role: 'Co-Founder & Head of Design' },
   { period: 'Feb 2025 — Aug 2025', company: 'Codar Tech Academy', role: 'Design Instructor & Mentor' },
   { period: '2024 — 2025', company: 'Viscio Logistics', role: 'Lead Product Designer' },
   { period: 'Jun 2024 — Dec 2024', company: 'Zeph Agency', role: 'UI/UX Designer' },
