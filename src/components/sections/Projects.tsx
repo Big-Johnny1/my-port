@@ -282,7 +282,7 @@ export default function Projects({ projects, onOpenProject }: Props) {
           transition={{ duration: 0.5, ease: EASE, delay: 0.1 }}
           className="text-[11px] font-medium text-muted hidden md:block"
         >
-          2021 — 2024
+          2021 — 2026
         </motion.span>
       </div>
 
